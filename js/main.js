@@ -71,7 +71,8 @@ function bookService(event) {
         }
         ;
     } else {
-        document.getElementById("nonValido").innerHTML = `non valido(sconto non applicato)`;
+        document.getElementById("codeWrong").innerHTML = `<label class="form-label" for="phone">Discount Code </label>
+        <input class="form-control text-danger" id="discount" type="text" value ="${discountCode}"/>`;
         if (optionService == "Backend") {
             let price = timeRequested * 20.50
             console.log(price);
