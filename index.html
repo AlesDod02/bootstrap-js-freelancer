@@ -42,8 +42,8 @@
     <section id="portfolio" class="mb-5">
       <div class="container">
         <h2 class="text-center text-uppercase mb-3">Portfolio</h2>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-5">
+        <div class="row" id="cardList">
+          <!--  <div class="col-md-6 col-lg-4 mb-5">
             <div class="card">
               <img class="card-img-top" src="img/portfolio/cabin.png" alt="cabin">
               <div class="card-body text-center">
@@ -102,7 +102,7 @@
                 <a href="#" class="card-link btn btn-outline-info">Visit site</a>
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </section>
@@ -144,7 +144,7 @@
           </div>
           <!-- Discount Code-->
           <div class="col-sm-6 col-12">
-            <label class="form-label" for="phone">Discount Code</label>
+            <label class="form-label" for="phone">Discount Code <span id="nonValido" class="text-danger fw-bold"></span></label>
             <input class="form-control" id="discount" type="text" />
           </div>
           <!-- Message input-->
@@ -155,6 +155,9 @@
           </div>
           <div class="col-12 text-center mt-4">
             <button class="btn btn-warning btn-lg" id="submitButton" type="submit">Send</button>
+          </div>
+          <div class="col-12 text-center mt-4">
+            <h3 id="finalPrice"></h3>
           </div>
 
           <div class="col-12">
