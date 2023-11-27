@@ -45,7 +45,8 @@ function bookService(event) {
             break;
         }
     }
-    if (discountValid) {
+    if (discountValid) {document.getElementById("codeWrong").innerHTML = `<label class="form-label" for="phone">Discount Code </label>
+    <input class="form-control " id="discount" type="text" value ="${discountCode}"/>`
 
 
         if (optionService == "Backend") {
